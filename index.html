@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container">
+    <div id="hex-field">
+        <div id="hex-field-score">
+            <div><b>Your score:</b> <span id="game-score">0</span> points</div>
+            <div><b>Game status:</b> <span id="game-status" data-status="playing">playing</span></div>
+        </div>
+
+        <div id="hex-field-restart">
+            <h3 class="hex-field-header">Game is Over</h3>
+            <p class="hex-field-score"><b>Your score:</b> <span id="end-game-score">0</span> points</p>
+            <button class="game-btn" id="restart-game-btn">Restart game</button>
+        </div>
+
+        <div id="start-game">
+            <H2 class="start-game-title">Hexagonal 2048</H2>
+            <label for="radius">
+                <p>Choose game level: <span id="show-game-level">2</span></p>
+                <input id="game-level" type="range" min="2" max="5" step="1" value="2">
+                <div class="game-level-numbers">
+                    <ul>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                    </ul>
+                </div>
+                <button class="game-btn" id="start-game-btn">Start game</button>
+            </label>
+        </div>
+    </div>
+    <div class="game-rules">
+        <p>
+            Combine hexagons of the same number to get bigger numbers.
+            Try to reach the 2048 tile and more!
+        </p>
+        <p><b>Keyboard keys: WEQSDA: </b></p>
+        <ul>
+            <li><b>W</b> - north (top)</li>
+            <li><b>E</b> - north-east (top-right)</li>
+            <li><b>Q</b> - north-west (top-left)</li>
+            <li><b>S</b> - south (bottom)</li>
+            <li><b>D</b> - south-east (bottom-right)</li>
+            <li><b>A</b> - south-west (bottom-left)</li>
+        </ul>
+    </div>
+    <script src="script/scrip.js"></script>
+</body>
+
+</html>

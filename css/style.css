@@ -1,0 +1,155 @@
+body {
+    font-family: "Ubuntu","Helvetica Neue",sans-serif;
+    margin: 0;
+}
+
+.container {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hex-field {
+    height: 720px;
+
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    background-color:rgb(240, 240, 240);
+    border: 3px solid black;
+    box-sizing: border-box;
+}
+
+#hex-field-score {
+    visibility: hidden;
+    width: 680px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 15px;
+}
+
+#hex-field-restart {
+    width: 500px;
+    height: 500px;
+
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+
+    z-index: 1;
+
+    background-color:rgb(182, 182, 182);
+    border: 1px solid black;
+}
+
+.hex-field-header {
+    width: 100%;
+    font-size: 52px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.hex-field-score {
+    text-align: center;
+    font-size: 20px;
+}
+
+.hex-field_item {
+    width: 90px;
+    height: 78px;
+    top: 0;
+    left: 0;
+
+    position: absolute;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    background-image: url("../svg/hex.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.hex-field_item_number{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#start-game {
+    width: 500px;
+
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#game-level {
+    width: 300px;
+}
+
+.game-btn {
+    display: block;
+
+    width: 250px;
+    height: 100px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    font-size: 32px;
+}
+
+.start-game-title {
+    font-size: 62px;
+    margin-bottom: 75px;
+}
+
+.start-game-title p {
+    color: darkgrey;
+}
+
+.game-level-numbers {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 18px;
+    font-weight: normal;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-level-numbers ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.game-level-numbers li {
+    display:flex;
+    list-style-type: none;
+}
+
+.game-rules ul{
+    display:flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.game-rules li {
+    list-style-type: square;
+    margin-right: 50px;
+}
+
